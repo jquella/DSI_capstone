@@ -8,3 +8,4 @@ General Assembly DSI capstone project - predicting All-NBA team awards
 	- `model_v2.ipynb` - Same as above, but with augmented dataset containing player's team information (e.g. Wins, Strength of Schedule)
 	- Link at bottom to:
 3. `Analysis and Takeaways` - Further analysis based on model results.
+	- `Analysis and Takeaways_v2` - Same as above with second model containing team information.
