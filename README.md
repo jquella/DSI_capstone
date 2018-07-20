@@ -1,6 +1,10 @@
 # DSI Capstone: Jamie Quella
 General Assembly DSI capstone project - predicting All-NBA team awards
 
+### Presentations
+1. Technical (longer): https://goo.gl/T3f4Uh
+2. Non-technical (shorter): https://goo.gl/qG9LKY
+
 ### Technical Notebooks
 1. `eda_v1.ipynb` - Initial data gathering, cleaning and prep notebook. 
 	- Link at bottom to:
