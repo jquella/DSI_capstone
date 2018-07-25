@@ -173,7 +173,7 @@ These two questions drove me to create a few different kind of awards...
 **What Happened?**
 - Model gave 98.2% prob. of getting award
 - Team success for other guards 
-- ¯\\_(ツ)/\_/¯  didn’t even make sense at the time
+- ¯\\_(ツ)\_/¯  didn’t even make sense at the time
 
 **Who Should’ve Been Left Off**
 - Klay Thompson (36% probability)
