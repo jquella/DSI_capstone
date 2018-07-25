@@ -22,7 +22,7 @@ _Jamie Quella - 7/17/18_
 **Can we predict who gets on the three All-NBA teams based on their season stats, and information about their team?**
 
 *Additional background and motivation*
-------
+
 **What is the All-NBA Award / what are we predicting?**
 Three teams - 1st, 2nd, 3rd - of five players are voted on by the sports media from these positions types:
 
