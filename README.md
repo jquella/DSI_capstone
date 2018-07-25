@@ -18,7 +18,7 @@ _Jamie Quella - 7/17/18_
 6. [Answer Question.](#answer_question)
 
 <a id='define_question'></a>
-### Define the Question.
+## Define the Question.
 **Can we predict who gets on the three All-NBA teams based on their season stats, and information about their team?**
 
 *Additional background and motivation*
@@ -33,7 +33,7 @@ Three teams - 1st, 2nd, 3rd - of five players are voted on by the sports media f
 
 
 <a id='gather_data'></a>
-### Gather Data.
+## Gather Data.
 NBA player data from 1989-2017 was collected from a subset of the data found [on Kaggle](https://www.kaggle.com/drgilermo/nba-players-stats/data). 
 
 In addition, 
