@@ -6,7 +6,7 @@
 
 _Jamie Quella - 7/17/18_
 
-**Goal:** The primary goal of this project was to predict a year’s All-NBA team from that season’s player stats and team information. The secondary goal was to use the predictive model as a starting point for further player analysis, for example, in examining where the model and reality differed.
+**Goal:** The primary goal of this project was to predict a year’s All-NBA team from that season’s player stats and team information. This is a classification problem! The secondary goal was to use the predictive model as a starting point for further player analysis, for example, in examining where the model and reality differed.
 
 
 **Process:** 
@@ -43,6 +43,13 @@ NBA player data from 1989-2017 was collected from a subset of the data found [on
 
 In addition, I scraped the [Basketball-Reference site](http://www.basketball-reference.com/) -- an invaluable resource -- for further information on the All-NBA awards, All-Star Awards, and team information for the 1989-2017 time period.
 
+I used the `requests` and `BeautifulSoup` libraries to scrape the data, dynamically inserting each year necessary based on the URL structure.
+
+This process was a bit more difficult than anticipated as the data tables were not consistent from year to year. After some trial and error, I implemented control flow around the requests and was able to pull all necessary data:
+- All-Star teams by conference, starters / reserves flagged
+- Team records by conference, including strength of schedule
+
+
 *Note:* The reason I chose the 1989 onward time period was two-fold:
 1. That was the year the league changed from two (2) to three (3) All-NBA teams, so predicting the same number of winners (15) for every year simplified the process.
 2. There was an added side benefit of being after 1979, which was the first year the three point line existed. This allowed me to use all stats equally across players, since they all had the same court and scoring opportunities.
@@ -64,6 +71,7 @@ Since the player dataset was from Kaggle, it was pretty clean. I did have to do 
 Here is a list of some important model preparation I did (though not exhaustive):
 - Map listed positions to 'award position' (e.g. PG/SG -> G)
 - Clean player names where necessary (e.g. Ron Artest / Metta World Peace)
+- Merge into one row data for players who were traded mid-season (and thus played for multiple teams)
 - Clean team names due to city moves and expansion teams
 	- This may upset some people but I used the most current team that inherits the franchise's history as the guide. For example, the Seattle Supersonics were mapped to the Oklahoma City Thunder (sorry, Seattleites!)
 - **Merge player data with web-scraped award and team data into final dataset**
@@ -82,6 +90,35 @@ I didn't find much there to indicate that there were any distribution issues, so
 
 Before building my model, there were two main items I had to tackle: **cross validation** and **model selection**.
 
+**Cross Validation:** As with all data science problems, we want to ensure we are not creating something that only works on the one dataset we are working with, or in other words, overfitting. The problem with the normal train-test-split process in this case is two-fold:
+1. We cannot use the normal process since we need all of any given year's player data to stay together (to predict on that year)
+2. We want to control for statistical changes by era, as styles of play have evolved
+
+To handle this, I manually chose the Train, Validation and Test (holdout) sets roughly according to quartets of years, picking three (3) train years for each (1) test year. See below for how they were apportioned.
+
+<img src="https://i.imgur.com/0PbR9zu.png">
+
+
+**Model Selection:** Analysis was a goal of the project, and understanding which features (stats) are important in determining award winners and losers is paramount. 
+
+**_INTERPRETABILITY IS KEY!_**
+
+In terms of model selection, that pointed me toward considering Logistic Regression and the Decision Tree model families for this classification problem, as they return feature importance.
+
+In the end, I chose Logistic Regression (see example below)
+- For its accuracy score (results in the next section) 
+- And because it gives _direction of feature importance_, i.e., whether a stat helps or hurts a player's cause for winning the award, and by how much relative to the other stats.
+
+<img src="https://i.imgur.com/obTT8gG.png">
+
+
+Now it's time to see how the model did.
+
+<a id='evaluate_model'></a>
+## Evaluate Model.
+
+
+
 
 
 
@@ -95,11 +132,11 @@ In addition to the above post, please peruse the following presentations and tec
 2. Non-technical (shorter): https://goo.gl/qG9LKY
 
 ### Technical Notebooks
-1. [eda_v1.ipynb](https://github.com/jquella/DSI_capstone/blob/master/eda_v1.ipynb) - Initial data gathering, cleaning and prep notebook. 
+1. [EDA notebook](https://github.com/jquella/DSI_capstone/blob/master/eda_v1.ipynb "eda_v1.ipynb") - Initial data gathering, cleaning and prep notebook. 
 	- Link at bottom to:
-2. [model_v1.ipynb](https://github.com/jquella/DSI_capstone/blob/master/model_v1.ipynb) - Feature engineering, modeling process and results, model evaluation. 
-	- [model_v2.ipynb](https://github.com/jquella/DSI_capstone/blob/master/model_v2.ipynb) - Same as above, but with augmented dataset containing player's team information (e.g. Wins, Strength of Schedule)
+2. [Model Notebook - v1](https://github.com/jquella/DSI_capstone/blob/master/model_v1.ipynb "model_v1.ipynb") - Feature engineering, modeling process and results, model evaluation. 
+	- [Model Notebook - v2](https://github.com/jquella/DSI_capstone/blob/master/model_v2.ipynb "model_v2.ipynb") - Same as above, but with augmented dataset containing player's team information (e.g. Wins, Strength of Schedule)
 	- Link at bottom to:
-3. [Analysis and Takeaways](https://github.com/jquella/DSI_capstone/blob/master/Analysis%20and%20Takeaways.ipynb) - Further analysis based on model results.
-	- [Analysis and Takeaways_v2](https://github.com/jquella/DSI_capstone/blob/master/Analysis%20and%20Takeaways_v2.ipynb) - Same as above with second model containing team information.
+3. [Analysis and Takeaways - v1](https://github.com/jquella/DSI_capstone/blob/master/Analysis%20and%20Takeaways.ipynb "Analysis and Takeaways") - Further analysis based on model results.
+	- [Analysis and Takeaways - v2](https://github.com/jquella/DSI_capstone/blob/master/Analysis%20and%20Takeaways_v2.ipynb "Analysis and Takeaways_v2") - Same as above with second model containing team information.
 
