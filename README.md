@@ -179,8 +179,11 @@ These two questions drove me to create a few different kind of awards...
 **Who Should’ve Been Left Off**
 - Klay Thompson, Warriors (36% probability)
 
+****
 
 **2. Biggest Cupcake - Dennis Rodman, 1995 (Spurs)**
+
+
 <img style="float: left; max-width: 50%; margin:20px" src="https://i.imgur.com/QvRA3Dx.png">
 
 **What Happened?**
@@ -193,8 +196,11 @@ These two questions drove me to create a few different kind of awards...
 **Who Should’ve Won Instead**
 - Clifford Robinson, Trailblazers (15% probability)
 
+****
 
 **3. Mr. Unlucky - Patrick Ewing, 1994-1996 (Knicks)**
+
+
 <img style="float: left; max-width: 50%; margin:20px" src="https://i.imgur.com/wTiaZ6b.png">
 
 **What Happened?**
