@@ -164,10 +164,10 @@ These two questions drove me to create a few different kind of awards...
 
 **1. Biggest Snub - James Harden, 2016**
 
-<!---
-<img style="float: left; width: 153px; height: 250px; margin:20px" src="https://i.imgur.com/13Bue3Z.png">
---->
-![James Harden](https://i.imgur.com/13Bue3Z.png?classes=float-right)
+
+<img style="float: left; max-width: 50%; margin:20px" src="https://i.imgur.com/13Bue3Z.png">
+
+<!-- ![James Harden](https://i.imgur.com/13Bue3Z.png?classes=float-right) -->
 
 
 **What Happened?**
