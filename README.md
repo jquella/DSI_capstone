@@ -164,12 +164,12 @@ These two questions drove me to create a few different kind of awards...
 
 **1. Biggest Snub - James Harden, 2016**
 
-<img style="float: right;" src="https://i.imgur.com/13Bue3Z.png">
+<img style="float: right; width: 303px; height: 493px;" src="https://i.imgur.com/13Bue3Z.png">
 
 **What Happened?**
 - Model gave 98.2% prob. of getting award
 - Team success for other guards 
-- ¯\/_(ツ)_/¯  didn’t even make sense at the time
+- ¯\\_(ツ)/\_/¯  didn’t even make sense at the time
 
 **Who Should’ve Been Left Off**
 - Klay Thompson (36% probability)
