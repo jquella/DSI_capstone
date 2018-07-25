@@ -162,10 +162,11 @@ Let's find out a little bit more about what the model can help us learn.
 
 These two questions drove me to create a few different kind of awards...
 
-**1. Biggest Snub - James Harden, 2016**
+**1. Biggest Snub - James Harden, 2016 (Rockets)**
+*Who deserved the award the most who didn't get it?*
 
 
-<img style="float: left; max-width: 50%; margin:20px" src="https://i.imgur.com/13Bue3Z.png">
+<img style="float: left; max-width: 50%; margin:20px" src="https://i.imgur.com/3MZmFY3.png">
 
 <!-- ![James Harden](https://i.imgur.com/13Bue3Z.png?classes=float-right) -->
 
@@ -176,7 +177,36 @@ These two questions drove me to create a few different kind of awards...
 - ¯\\_(ツ)\_/¯  didn’t even make sense at the time
 
 **Who Should’ve Been Left Off**
-- Klay Thompson (36% probability)
+- Klay Thompson, Warriors (36% probability)
+
+
+**2. Biggest Cupcake - Dennis Rodman, 1995 (Spurs)**
+<img style="float: left; max-width: 50%; margin:20px" src="https://i.imgur.com/QvRA3Dx.png">
+
+**What Happened?**
+- Model gave Rodman < 1% prob. of getting award
+- Why did he get i?
+	- Team success - 76% win rate
+	- Statistical outlier (rebounds), maybe more heavily weighed by voters than model
+
+
+**Who Should’ve Won Instead**
+- Clifford Robinson, Trailblazers (15% probability)
+
+
+**3. Mr. Unlucky - Patrick Ewing, 1994-1996 (Knicks)**
+<img style="float: left; max-width: 50%; margin:20px" src="https://i.imgur.com/wTiaZ6b.png">
+
+**What Happened?**
+- 4th in center voting (first out) all three years 1994-1996 
+	- Model gave highest probability -- 99.0% -- in 1994
+- Bad timing
+	- Shaq, D. Robinson, H. Olajuwon all had GOAT center seasons
+- Unlucky position - only 3 center spots vs. 6 guard and 6 forward spots
+
+
+**Who Should’ve Been Left Off?**
+- Nobody. Ewing would have done extremely well in other eras (and did, pre-Shaq), but was just unlucky. This one hits close to home as a native New Yorker and long-suffering Knicks fan :(
 
 
 
