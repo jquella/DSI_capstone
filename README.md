@@ -22,15 +22,19 @@ _Jamie Quella - 7/17/18_
 **Can we predict who gets on the three All-NBA teams based on their season stats, and information about their team?**
 
 *Additional background and motivation*
-
+------
 **What is the All-NBA Award / what are we predicting?**
 Three teams - 1st, 2nd, 3rd - of five players are voted on by the sports media from these positions types:
 
 <img src="https://i.imgur.com/BIyliKP.png">
 
-**These players are honored as the best at their respective positions.**
+These players are honored as the best at their respective positions.
 
-
+**So why should we care?**
+1. *It can affect NBA contracts:* Award winners can command a higher salary.
+2. *It can help a player's chance at getting into the Hall of Fame*: These accolades are often brought up when reviewing a player's HOF resume.
+3. *You could bet on it in Vegas if you believe in your model:* You'd need to find good odds, too.
+4. *I love NBA basketball and though it would be a neat project*
 
 <a id='gather_data'></a>
 ## Gather Data.
