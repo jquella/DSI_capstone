@@ -164,7 +164,7 @@ These two questions drove me to create a few different kind of awards...
 
 **1. Biggest Snub - James Harden, 2016**
 
-<img style="float: right; width: 153px; height: 250px; margin:20px" src="https://i.imgur.com/13Bue3Z.png">
+<img style="float: left; width: 153px; height: 250px; margin:20px" src="https://i.imgur.com/13Bue3Z.png">
 
 **What Happened?**
 - Model gave 98.2% prob. of getting award
