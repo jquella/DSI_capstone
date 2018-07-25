@@ -70,7 +70,11 @@ Here is a list of some important model preparation I did (though not exhaustive)
 
 Lastly, I spent some time look at feature distributions to ensure there were not any stats I shouldn't use: either because they had values but those values acted like nulls, or because the distribution was so skewed the data became unhelpful. 
 
-I didn't find much there to indicate that, so tht led us to the next step!
+Example feature distribution below.
+
+<img src="https://i.imgur.com/pB7aklJ.png">
+
+I didn't find much there to indicate that there were any distribution issues, so onto the next step!
 
 
 <a id='model_data'></a>
