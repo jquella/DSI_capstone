@@ -181,7 +181,7 @@ These two questions drove me to create a few different kind of awards...
 
 ****
 
-**2. Biggest Cupcake - Dennis Rodman, 1995 (Spurs)**
+**2. Biggest Cupcake - Dennis Rodman, 1995 (Spurs)** *Who got the award who deserved it the least?*
 
 
 <img style="float: left; max-width: 50%; margin:20px" src="https://i.imgur.com/QvRA3Dx.png">
@@ -198,7 +198,7 @@ These two questions drove me to create a few different kind of awards...
 
 ****
 
-**3. Mr. Unlucky - Patrick Ewing, 1994-1996 (Knicks)**
+**3. Mr. Unlucky - Patrick Ewing, 1994-1996 (Knicks)** *Who just missed out on the award the most?*
 
 
 <img style="float: left; max-width: 50%; margin:20px" src="https://i.imgur.com/wTiaZ6b.png">
